@@ -32,7 +32,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
 import org.junit.rules.RuleChain;
 
 import static org.junit.Assert.*;
@@ -74,6 +76,7 @@ public class RoutingAppenderWithJndiTest {
         }
     }
 
+    @Ignore
     @Test
     public void routingTest() throws NamingException {
         // default route when there's no jndi resource
